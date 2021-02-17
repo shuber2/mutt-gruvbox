@@ -9,7 +9,9 @@ as mail composer.
 This is a replication of the repository
 [here](https://git.sthu.org/?p=mutt-gruvbox.git;a=summary). The
 [website](https://www.sthu.org/code/codesnippets/mutt-gruvbox.html) gives
-further details and a screenshot.
+further details and a screenshot, like this:
+
+![screenshot](https://www.sthu.org/code/codesnippets/img/mutt-gruvbox.png)
 
 
 ## Usage
