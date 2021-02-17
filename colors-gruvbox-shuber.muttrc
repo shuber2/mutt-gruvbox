@@ -62,8 +62,9 @@ color header color142 color234 "^Subject:"
 color header color108 color234 "^X-Spam-Status:"
 color header color108 color234 "^Received:"
 
-color body color142 color234 "[a-z]{3,256}://[-a-zA-Z0-9@:%._\\+~#=/?&,]+"
-color body color142 color234 "[a-zA-Z]([-a-zA-Z0-9_]+\\.){2,256}[-a-zA-Z0-9_]{2,256}"
+# BSD's regex has RE_DUP_MAX set to 255.
+color body color142 color234 "[a-z]{3,255}://[-a-zA-Z0-9@:%._\\+~#=/?&,]+"
+color body color142 color234 "[a-zA-Z]([-a-zA-Z0-9_]+\\.){2,255}[-a-zA-Z0-9_]{2,255}"
 color body color208 color234 "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
 color body color208 color234 "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
 color body color234 color214 "[;:]-*[)>(<lt;|]"
