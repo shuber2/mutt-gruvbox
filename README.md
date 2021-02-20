@@ -23,9 +23,9 @@ Download the files or clone the repo, e.g.
 
 Then source them in your `~/.mutt/muttrc`, e.g.
 
-    source ~/.mutt/colors-gruvbox-shuber.muttrc
+    source ~/.mutt/gruvbox/colors-gruvbox-shuber.muttrc
     # For neomutt also add this line:
-    # source ~/.mutt/colors-gruvbox-shuber-extended.muttrc
+    # source ~/.mutt/gruvbox/colors-gruvbox-shuber-extended.muttrc
 
 The colorscheme is split into two files, where the latter also defines colors
 for neomutt.
