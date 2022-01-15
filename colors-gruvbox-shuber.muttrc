@@ -63,10 +63,15 @@ color header color108 color234 "^X-Spam-Status:"
 color header color108 color234 "^Received:"
 
 # BSD's regex has RE_DUP_MAX set to 255.
-color body color142 color234 "[a-z]{3,255}://[-a-zA-Z0-9@:%._\\+~#=/?&,]+"
+# schema://stuff
+color body color142 color234 "[a-z]{3,255}://[-a-zA-Z0-9@:%._\\+~#=/?&,;]+"
+# fully qualified hostnames
 color body color142 color234 "[a-zA-Z]([-a-zA-Z0-9_]+\\.){2,255}[-a-zA-Z0-9_]{2,255}"
+# mail addresses
 color body color208 color234 "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+# mailto URLS
 color body color208 color234 "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+# some simleys
 color body color234 color214 "[;:]-*[)>(<lt;|]"
 color body color229 color234 "\\*[- A-Za-z]+\\*"
 
